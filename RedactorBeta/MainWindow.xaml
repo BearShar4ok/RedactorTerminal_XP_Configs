@@ -10,37 +10,37 @@
 
     <StackPanel Background="AntiqueWhite">
         <Border BorderThickness="2" BorderBrush="Black">
-        <StackPanel Margin="0,5,0,5">
-        <DockPanel x:Name="buttonsDockPanel" Height="40">
-            <Button Content="Сохранить"
+            <StackPanel Margin="0,5,0,5">
+                <DockPanel x:Name="buttonsDockPanel" Height="40">
+                    <Button Content="Сохранить"
                         Click="Button_Click_1"
                         Width="150" HorizontalAlignment="Left" Margin="20,5,5,5"
                         />
-            <Button Content="Загрузить"
+                    <Button Content="Загрузить"
                         Click="Button_Click"
                         Width="200" HorizontalAlignment="Left" Margin="20,5,5,5"/>
-            <Button Content="Инструкция"
+                    <Button Content="Инструкция"
                         Click="Button_Click_2"
                         Width="150" HorizontalAlignment="Left" Margin="20,5,5,5"/>
-            <Button Content="Общий конфиг"
+                    <Button Content="Общий конфиг"
                         Click="Button_Config_Click"
                         Width="150" HorizontalAlignment="Left" Margin="20,5,5,5"/>
 
-        </DockPanel>
+                </DockPanel>
 
-        <DockPanel VerticalAlignment="Top"  x:Name="visualDockPanel">
+                <DockPanel VerticalAlignment="Top"  x:Name="visualDockPanel">
 
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="файлы" ToolTip="Логины и пароли" DockPanel.Dock="Left" Margin="2,6,3,0" Width="174" FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="логины и пароли" ToolTip="Логины и пароли" DockPanel.Dock="Right" Margin="2,5,18,0" Width="174" FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="🔢" ToolTip="Количество попыток ввода пароля" DockPanel.Dock="Right" Margin="2,5,12,0"  FontSize="20" IsReadOnly="True"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="🔐" ToolTip="Можно ли взломать" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="🔑" ToolTip="Есть ли пароли" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="🗑" ToolTip="Можно ли удалить файл" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="📤" ToolTip="Можно ли копировать файл" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="📝" ToolTip="Можно ли менять ползователю файл" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
-            <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Black" Text="" Visibility="Hidden" DockPanel.Dock="Right" Margin="2,5,1,0" Width="15.9" FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
-        </DockPanel>
-        </StackPanel>
+                    <!--<TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="файлы" ToolTip="Логины и пароли" DockPanel.Dock="Left" Margin="2,6,3,0" Width="174" FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />-->
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="логины и пароли" ToolTip="Логины и пароли" DockPanel.Dock="Right" Margin="2,5,98,0" Width="174" FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="🔢" ToolTip="Количество попыток ввода пароля" DockPanel.Dock="Right" Margin="2,5,72,0"  FontSize="20" IsReadOnly="True"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="🔐" ToolTip="Можно ли взломать" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="🔑" ToolTip="Есть ли пароли" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="🗑" ToolTip="Можно ли удалить файл" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="📤" ToolTip="Можно ли копировать файл" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="📝" ToolTip="Можно ли менять ползователю файл" DockPanel.Dock="Right" Margin="2,5,1,0"  FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
+                    <TextBox Background="AntiqueWhite" BorderThickness="1" BorderBrush="Transparent" Text="" Visibility="Hidden" DockPanel.Dock="Right" Margin="2,5,1,0" Width="15.9" FontSize="20" IsReadOnly="True" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" />
+                </DockPanel>
+            </StackPanel>
         </Border>
         <ScrollViewer Margin="0,5,0,5" x:Name="scroller" CanContentScroll="False" Height="200">
             <StackPanel x:Name="folderer">
