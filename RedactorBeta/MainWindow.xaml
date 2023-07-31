@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:RedactorBeta"
         SizeChanged="Window_SizeChanged"
         mc:Ignorable="d"
-        Title="MainWindow" Height="auto" Width="800">
+        Title="MainWindow" Height="auto" Width="1000">
 
     <StackPanel Background="AntiqueWhite">
         <Border BorderThickness="2" BorderBrush="Black">

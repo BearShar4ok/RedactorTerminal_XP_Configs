@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RedactorBeta
+﻿namespace RedactorBeta
 {
     public class MainConfigModel
     {
@@ -12,6 +6,7 @@ namespace RedactorBeta
         public ushort FontSize { get; set; }
         public float Opacity { get; set; }
         public string TerminalColor { get; set; }
+        public string TerminalColorSecond { get; set; }
         public bool UsingDelayFastOutput { get; set; }
         public uint DelayFastOutput { get; set; }
         public uint DelayUpdateCarriage { get; set; }
@@ -20,5 +15,6 @@ namespace RedactorBeta
         public uint LengthHackString { get; set; }
         public bool DifficultyInfo { get; set; }
         public string FontName { get; set; }
+        public bool IsDebugMode { get; set; }
     }
 }
