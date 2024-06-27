@@ -15,7 +15,7 @@ namespace RedactorBeta
         {
             InitializeComponent();
 
-            MainConfigModel dataClass = JsonConvert.DeserializeObject<MainConfigModel>(File.ReadAllText("../../../../Terminal_XP/Terminal_XP/bin/Debug/files/Config.json"));
+            MainConfigModel dataClass = JsonConvert.DeserializeObject<MainConfigModel>(File.ReadAllText("../../../../Terminal_7/Terminal_7/bin/Debug/files/Config.json"));
             Theme.Text = dataClass.Theme;
             FontSize.Text = dataClass.FontSize.ToString();
             Opacity.Text = dataClass.Opacity.ToString();
@@ -28,7 +28,6 @@ namespace RedactorBeta
             RatioSpawnWords.Text = dataClass.RatioSpawnWords.ToString();
             LengthHackString.Text = dataClass.LengthHackString.ToString();
             DifficultyInfo.IsChecked = dataClass.DifficultyInfo;
-            FontName.Text = dataClass.FontName;
             IsDebugMode.IsChecked = dataClass.IsDebugMode;
 
 
@@ -75,11 +74,10 @@ namespace RedactorBeta
                 RatioSpawnWords = uint.Parse(RatioSpawnWords.Text),
                 LengthHackString = uint.Parse(LengthHackString.Text),
                 DifficultyInfo = (bool)DifficultyInfo.IsChecked,
-                FontName = FontName.Text,
                 IsDebugMode = (bool)IsDebugMode.IsChecked,
             });
-            File.WriteAllText("../../../../Terminal_XP/Terminal_XP/bin/Debug/files/Config.json", a);
-            File.WriteAllText("../../../../Terminal_XP/Terminal_XP/files/Config.json", a);
+            File.WriteAllText("../../../../Terminal_7/Terminal_7/bin/Debug/files/Config.json", a);
+            File.WriteAllText("../../../../Terminal_7/Terminal_7/files/Config.json", a);
             Close();
         }
 

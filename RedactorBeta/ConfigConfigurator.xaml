@@ -28,22 +28,20 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Тема терминала"                 />
         <Label Grid.Row="1"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Размер шрифта"              />
         <Label Grid.Row="2"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Прозрачность шрифта"               />
         <Label Grid.Row="3"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Цвет шрифта"         />
         <Label Grid.Row="4"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Цвет подсветки"         />
-        <Label Grid.Row="5" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Название шрифта"              />
-        <Label Grid.Row="6"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Использовать задержку печати"  />
-        <Label Grid.Row="7"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Задержка печати"       />
-        <Label Grid.Row="8"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Время мигания каретки"   />
-        <Label Grid.Row="9"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Символ каретки"         />
-        <Label Grid.Row="10"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Вероятность появления слова"       />
-        <Label Grid.Row="11"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Количество символов в строке взлома"      />
-        <Label Grid.Row="12" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Подсказки при взломе"        />
-        <Label Grid.Row="13" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Режим тестирования"              />
+        <Label Grid.Row="5"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Использовать задержку печати"  />
+        <Label Grid.Row="6"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Задержка печати"       />
+        <Label Grid.Row="7"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Время мигания каретки"   />
+        <Label Grid.Row="8"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Символ каретки"         />
+        <Label Grid.Row="9"   Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Вероятность появления слова"       />
+        <Label Grid.Row="10"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Количество символов в строке взлома"      />
+        <Label Grid.Row="11" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Подсказки при взломе"        />
+        <Label Grid.Row="12" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Режим тестирования"              />
 
         <TextBox Grid.Row="0"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="Theme"
                  ToolTip="Название папки с темой для терминала"/>
@@ -55,31 +53,29 @@
                  Click="TerminalColor_Click" ToolTip="Цвет текста в терминале"/> 
         <Button  Grid.Row="4"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="TerminalColorSecond"
                  Click="TerminalColorSecond_Click" ToolTip="Цвет подсветки при выборе файла в терминале"/>
-        <CheckBox Grid.Row="6"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="UsingDelayFastOutput"
+        <CheckBox Grid.Row="5"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="UsingDelayFastOutput"
                ToolTip="В значении True использует задержку при печати. В значении False печатает текст на экране без задержки." >
             <CheckBox.RenderTransform>
                 <ScaleTransform ScaleX="2" ScaleY="2"/>
             </CheckBox.RenderTransform>
         </CheckBox>
-        <TextBox Grid.Row="7"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="DelayFastOutput"
+        <TextBox Grid.Row="6"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="DelayFastOutput"
                  ToolTip="Время задержки печати между символами."/>
-        <TextBox Grid.Row="8"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="DelayUpdateCarriage"
+        <TextBox Grid.Row="7"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="DelayUpdateCarriage"
                  ToolTip="Время мигания символа каретки"/>
-        <TextBox Grid.Row="9"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="SpecialSymbol"
+        <TextBox Grid.Row="8"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="SpecialSymbol"
                  ToolTip="Символ каретки при печати."/>
-        <TextBox Grid.Row="10"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="RatioSpawnWords"
+        <TextBox Grid.Row="9"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="RatioSpawnWords"
                  ToolTip="От 0 до этого числа генерируется число и если оно равно 0, то появляется неверный пароль при взломе. Чем больше число, тем меньше вероятность"/>
-        <TextBox Grid.Row="11"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="LengthHackString"
+        <TextBox Grid.Row="10"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="LengthHackString"
                  ToolTip="Количество символов в строке с учетом паролей"/>
-        <CheckBox Grid.Row="12"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" 
+        <CheckBox Grid.Row="11"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" 
                   VerticalContentAlignment="Center" x:Name="DifficultyInfo" ToolTip="отображает количество верно угаданных символов из пароля">
             <CheckBox.RenderTransform>
                 <ScaleTransform ScaleX="2" ScaleY="2"/>
             </CheckBox.RenderTransform>
         </CheckBox>
-        <TextBox Grid.Row="5" Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="FontName"
-                 ToolTip="Название шрифта из папки Theme для печати текста"/>
-        <CheckBox Grid.Row="13"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" 
+        <CheckBox Grid.Row="12"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" 
                   VerticalContentAlignment="Center" x:Name="IsDebugMode" ToolTip="Отображает подсказки при тестировании">
             <CheckBox.RenderTransform>
                 <ScaleTransform ScaleX="2" ScaleY="2"/>

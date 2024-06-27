@@ -37,7 +37,8 @@ namespace RedactorBeta
             //return;
             LoadSettings();
             name = path.Split('\\').Last();
-            DetermineFormat();
+            DetermineFormat(path);
+                
             SetContentName();
 
             CollapseButton.Content = "▶";
@@ -50,15 +51,15 @@ namespace RedactorBeta
                 CollapseButton.Visibility = Visibility.Hidden;
             }
         }
-        public void DetermineFormat()
+        public void DetermineFormat(string path)
         {
-            if (name.Contains('.'))
+            if (name.Contains('.') && !Directory.Exists(path))
             {
                 format = name.Split('.').Last();
             }
-            else
+            else if (Directory.Exists(path))
             {
-                format = "";
+                format = "folder";
             }
         }
         public void SetContentName()
@@ -66,7 +67,7 @@ namespace RedactorBeta
             string pic;
             switch (format)
             {
-                case "":
+                case "folder":
                     pic = "📁"; // 🗀
                     break;
                 case "doc":
@@ -85,6 +86,9 @@ namespace RedactorBeta
                 case "exe":
                     pic = "💽";
                     break;
+                case "execute":
+                    pic = "🎮";
+                    break;
                 case "wav":
                 case "mp4":
                     pic = "🎬"; // 🎞
@@ -97,7 +101,7 @@ namespace RedactorBeta
                     pic = "🔗";
                     break;
                 default:
-                    pic = "🗋 ";
+                    pic = "🗋";
                     break;
             }
             contentName.Content = pic+name.Replace("_", "__");

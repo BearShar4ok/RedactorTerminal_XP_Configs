@@ -14,7 +14,6 @@
         public uint RatioSpawnWords { get; set; }
         public uint LengthHackString { get; set; }
         public bool DifficultyInfo { get; set; }
-        public string FontName { get; set; }
         public bool IsDebugMode { get; set; }
     }
 }

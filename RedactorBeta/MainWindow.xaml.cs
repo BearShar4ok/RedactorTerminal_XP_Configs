@@ -28,7 +28,7 @@ namespace RedactorBeta
         {
             scroller.Height = ActualHeight - (buttonsDockPanel.ActualHeight + visualDockPanel.ActualHeight + indicator.ActualHeight)-63;//-58
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Load(object sender, RoutedEventArgs e)
         {
             //Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
             //if (openFileDialog.ShowDialog() == true)
@@ -59,7 +59,7 @@ namespace RedactorBeta
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_Save(object sender, RoutedEventArgs e)
         {
             if (folderer.Children.Count > 0)
             {
@@ -82,7 +82,7 @@ namespace RedactorBeta
                 }
             }).Start();
         }
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_Instruction(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Наведите мышку на галочку, чтобы подписалось её назначение." +
                 "\nПервая - Можно ли менять ползователю файл" +
