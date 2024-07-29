@@ -29,6 +29,7 @@ namespace RedactorBeta
             LengthHackString.Text = dataClass.LengthHackString.ToString();
             DifficultyInfo.IsChecked = dataClass.DifficultyInfo;
             IsDebugMode.IsChecked = dataClass.IsDebugMode;
+            IsFlashcardHack.IsChecked = dataClass.IsFlashcardHack;
 
 
             TerminalColor.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(dataClass.TerminalColor));
@@ -75,6 +76,7 @@ namespace RedactorBeta
                 LengthHackString = uint.Parse(LengthHackString.Text),
                 DifficultyInfo = (bool)DifficultyInfo.IsChecked,
                 IsDebugMode = (bool)IsDebugMode.IsChecked,
+                IsFlashcardHack = (bool)IsFlashcardHack.IsChecked,
             });
             File.WriteAllText("../../../../Terminal_7/Terminal_7/bin/Debug/files/Config.json", a);
             File.WriteAllText("../../../../Terminal_7/Terminal_7/files/Config.json", a);

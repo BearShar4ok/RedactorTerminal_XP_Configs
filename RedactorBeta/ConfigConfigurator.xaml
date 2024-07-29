@@ -6,7 +6,7 @@
         
         xmlns:local="clr-namespace:RedactorBeta"
         mc:Ignorable="d"
-        Title="ConfigConfigurator" Height="590" Width="800">
+        Title="ConfigConfigurator" Height="650" Width="800">
 
     <Grid x:Name="fild" ShowGridLines="False" >
         <Grid.ColumnDefinitions>
@@ -14,6 +14,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -42,6 +43,7 @@
         <Label Grid.Row="10"  Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Количество символов в строке взлома"      />
         <Label Grid.Row="11" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Подсказки при взломе"        />
         <Label Grid.Row="12" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Режим тестирования"              />
+        <Label Grid.Row="13" Background="AntiqueWhite" FontSize="20" Margin="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Взлом при помощи флешки"              />
 
         <TextBox Grid.Row="0"  Grid.Column="1" Margin="1" BorderThickness="1" BorderBrush="Black" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="Theme"
                  ToolTip="Название папки с темой для терминала"/>
@@ -77,6 +79,12 @@
         </CheckBox>
         <CheckBox Grid.Row="12"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" 
                   VerticalContentAlignment="Center" x:Name="IsDebugMode" ToolTip="Отображает подсказки при тестировании">
+            <CheckBox.RenderTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2"/>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <CheckBox Grid.Row="13"  Grid.Column="1" Margin="0,0,5,19" BorderThickness="1" BorderBrush="Black" FontSize="10" HorizontalContentAlignment="Left" 
+          VerticalContentAlignment="Center" x:Name="IsFlashcardHack" ToolTip="Для взлома нужна специальная флешка">
             <CheckBox.RenderTransform>
                 <ScaleTransform ScaleX="2" ScaleY="2"/>
             </CheckBox.RenderTransform>
